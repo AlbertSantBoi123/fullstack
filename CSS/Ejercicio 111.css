@@ -1,0 +1,12 @@
+h1{word-spacing: 20px;text-shadow: 25px 3px  3px rgb(255, 0, 0);}
+h2{word-spacing: -9px;}
+.fuente{font-family:"Arial";color:red;font-style: italic;}
+.fuente2{font-style: oblique;}
+.tamaño1{font-size: 50px;font-weight: normal;}
+.tamaño2{font-size: 30px;font-weight: bold;}
+.tamaño3{font-size: 15px;font-weight: lighter;font-variant: small-caps;}
+.main-header_brand{color: #0e4f1f; text-decoration: none; font-weight: bold; font-size: 22px;}
+body{font-family: 'Montserrat', sans-serif;}
+.middle{vertical-align: middle;}
+.top{vertical-align: top;}
+.bottom{vertical-align: bottom;}
