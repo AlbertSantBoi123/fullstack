@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas JavaScript FrontEnd</title>
+    <script src="../JS/primerjavascript.js"></script>
+    <script>alert("Ventana de alerta"); </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Pruebas JavaScript FrontEnd</h1>
+    <script>
+        document.write("Hello world! Texto en el documento"); 
+    </script>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum sapiente culpa exercitationem temporibus odio inventore reiciendis tenetur nihil quas esse veniam voluptas, ea eius cumque praesentium nisi molestias ipsam!</p>
+    <button type="submit" onclick="cambia()">HAZ CLICK PARA CAMBIAR</button>
+    <button type="submit" onclick="vuelve()">HAZ CLICK PARA VOLVER</button>
+    <button type="submit" onclick="saludar()">Holi ^^</button>
+    <script>
+        function cambia() {
+        document.getElementById("demo").innerHTML = "Párrafo cambiado";}
+    </script>
+    <script>
+        function vuelve() {
+        document.getElementById("demo").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum sapiente culpa exercitationem temporibus odio inventore reiciendis tenetur nihil quas esse veniam voluptas, ea eius cumque praesentium nisi molestias ipsam!";}
+    </script>
+    <!-- ahora puede utilizarse la librería jQuery -->
+    <script>
+        $(document).ready(function(){
+        console.log('Librería jQuery cargada');
+        });
+    </script>
+    <script>
+        console.log("hola");
+        console.log('en', 'un', 'lugar', 'de', 'la', 'Mancha');
+        console.info('Info');
+        console.warn('Warning');
+        console.error('Error');
+    </script>
+    <br>
+    <script>
+        document.write("Texto2");
+    </script>
+    <script>
+        const nombre = "Alejandro";
+        function saludar() {
+        document.write(nombre);}
+    </script>
+    <script>
+        const nombre3 = prompt("Escriba su nombre", "Escriba aquí");
+        console.log(nombre3);
+        const conf = confirm("Sí o no");
+        // true o false "Aceptar o cancelar"
+        console.log(conf);
+    </script>
+        
+</body>
+</html>
