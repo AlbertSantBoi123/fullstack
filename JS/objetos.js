@@ -1,33 +1,47 @@
-const persona = {
-    nombre: "Alejandro",
-            "lugar de residencia": "Madrid"
-};
-console.log(persona.nombre);
-console.log(["lugar de residencia"]);
-
-const x = {
-    peras:3,
-    fresas:20,
-    contar:function(){
-            console.log(this.peras + this.fresas)
-    }
-};
 const objeto1 = {
-    nombre:"Alejandro",
-    mostrarNombre(){
-        console.log(this.nombre);
+    gestor:"Banco X",
+    cliente: "Marc",
+    mensaje: "Hola",
+    transferencia: "La transferencia OK"
+}
+console.log(objeto1.cliente);
+console.log(objeto1.mensaje);
+const objeto2 = {
+    gestor:"Banco Y",
+    cliente: "Cristina",
+    mensaje() {
+        console.log( "Hola" + this.cliente);
+    },
+    transferencia() {
+        console.log("La transferencia de " + this.gestor +  " se ha realizado correctamente");
     }
 }
-objeto1.mostrarNombre();
-console.log(objeto1.nombre);
-
-const banco =  {
-    Gestor:"A",
-    Cliente:"B",
-    Mensaje:"C",
-    Transferencia:"D",
-    mostrarPeticion(){
-        console.log( "Hola señor " + this.Cliente + " La transferencia será realizada por el gestor " + this.Gestor);
+const objeto3 = {
+    gestor:"Banco Z",
+    cliente: "Rut",
+    mensaje() {
+        console.log( "Hola" + this.cliente);
+    },
+    transferencia() {
+        console.log("La transferencia de " + this.gestor +  " se ha realizado correctamente");
     }
 }
-banco.mostrarPeticion();
+arrayObj1=Object.keys(objeto1)
+console.log(arrayObj1);
+arrayObj2=Object.keys(objeto2)
+console.log(arrayObj2);
+arrayObj3=Object.keys(objeto3)
+console.log(arrayObj3);
+lon1 =arrayObj1.length;//4
+console.log(typeof(objeto2[arrayObj2[3]]))
+for (let i = 0; i < lon1; i++) {
+    console.log(objeto1[arrayObj1[i]]);
+}
+lon2 =arrayObj2.length;//4
+for (let i = 0; i < lon2; i++) {
+    console.log(objeto2[arrayObj2[i]]);
+}
+lon3 =arrayObj3.length;//4
+for (let i = 0; i < lon3; i++) {
+    console.log(objeto3[arrayObj3[i]]);
+};
