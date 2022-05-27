@@ -3,5 +3,4 @@ setTimeout(() => {
     }, 5000);
     setInterval(() => {
     console.log('Esta instrucción se ejecuta cada 5 segundos');
-    }, 5000);
-    
+    }, 5000)
